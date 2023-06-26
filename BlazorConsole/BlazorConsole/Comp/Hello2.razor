@@ -1,0 +1,27 @@
+﻿<table>
+    @foreach (var person in persons)
+    {
+        <tr>
+            <td>@person.FirstName</td>
+            <td>@person.LastName</td>
+        </tr>
+    }
+
+</table>
+<button @onClick="AddPerson()">Add Person</button>
+@code {
+    List<Person> persons=new List<Person>();
+    class Person
+    {
+        public String FirstName;
+        public String LastName;
+    }
+
+    public void AddPerson()
+    {
+        var _person = new Person();
+        _person.FirstName = "Paul";
+        _person.LastName = "Teilnehmer";
+        persons.Add(_person);
+    }
+}

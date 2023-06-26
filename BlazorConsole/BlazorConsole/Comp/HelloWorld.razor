@@ -1,0 +1,23 @@
+﻿<h3>Hello World</h3>
+<p> Hello Paul - @DateTime.Now.ToFileTimeUtc()</p>
+<p>Hello World - @(DateTime.Now.ToLongTimeString())</p>
+<p>
+    @{
+        int x = 10;
+        int y = 20;
+        int sum = x + y;
+        <span>Summe aus @x und @y = @sum</span>
+    }
+</p>
+<ul>
+    @for (int i = 0; i < counter; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+<button @onclick="() => counter++">Counter ++</button>
+@code {
+    int counter = 2;
+
+
+}
