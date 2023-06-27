@@ -28,36 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            blazorView = new Microsoft.Web.WebView2.WinForms.WebView2();
-            ((System.ComponentModel.ISupportInitialize)blazorView).BeginInit();
+            blazorWebView1 = new Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView();
             SuspendLayout();
             // 
-            // blazorView
+            // blazorWebView1
             // 
-            blazorView.AllowExternalDrop = true;
-            blazorView.CreationProperties = null;
-            blazorView.DefaultBackgroundColor = Color.White;
-            blazorView.Dock = DockStyle.Fill;
-            blazorView.Location = new Point(0, 0);
-            blazorView.Name = "blazorView";
-            blazorView.Size = new Size(800, 450);
-            blazorView.TabIndex = 0;
-            blazorView.ZoomFactor = 1D;
+            blazorWebView1.Dock = DockStyle.Fill;
+            blazorWebView1.Location = new Point(0, 0);
+            blazorWebView1.Name = "blazorWebView1";
+            blazorWebView1.Size = new Size(800, 450);
+            blazorWebView1.TabIndex = 0;
+            blazorWebView1.Text = "blazorWebView1";
             // 
             // blazorForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(blazorView);
+            Controls.Add(blazorWebView1);
             Name = "blazorForm";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)blazorView).EndInit();
+            Text = "Blazor WebView2";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Microsoft.Web.WebView2.WinForms.WebView2 blazorView;
+        private Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView blazorWebView1;
     }
 }

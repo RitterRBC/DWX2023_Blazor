@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RCLSample", "RCLSample\RCLS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAsm", "WebAsm\WebAsm.csproj", "{9E850BB2-9635-428F-8E05-643B2A28FE2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{776BD1D3-46F5-4B83-BDE0-D7671B1E1882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForm", "WinForm\WinForm.csproj", "{776BD1D3-46F5-4B83-BDE0-D7671B1E1882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
