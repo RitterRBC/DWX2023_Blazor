@@ -16,7 +16,7 @@ namespace WinForm
             services.AddBlazorWebViewDeveloperTools();
             blazorWebView1.HostPage = "wwwroot\\index.html";
             blazorWebView1.Services = services.BuildServiceProvider();
-            blazorWebView1.RootComponents.Add<RCLSample.Comp.CounterDemo>("#app");
+            blazorWebView1.RootComponents.Add<RCLSample.Comp.CounterDemo>("#app"); 
         }
     }
 }
